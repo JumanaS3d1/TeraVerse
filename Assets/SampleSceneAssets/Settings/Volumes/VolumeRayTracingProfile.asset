@@ -1,45 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-2847105570932170210
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d877a03bef431a847adca8ab343db3e1, type: 3}
-  m_Name: RayTracingSettings
-  m_EditorClassIdentifier: 
-  active: 1
-  rayBias:
-    m_OverrideState: 0
-    m_Value: 0.001
-  distantRayBias:
-    m_OverrideState: 0
-    m_Value: 0.001
-  extendShadowCulling:
-    m_OverrideState: 0
-    m_Value: 0
-  extendCameraCulling:
-    m_OverrideState: 0
-    m_Value: 0
-  directionalShadowRayLength:
-    m_OverrideState: 0
-    m_Value: 1000
-  directionalShadowFallbackIntensity:
-    m_OverrideState: 1
-    m_Value: 0
-  buildMode:
-    m_OverrideState: 0
-    m_Value: 0
-  cullingMode:
-    m_OverrideState: 0
-    m_Value: 0
-  cullingDistance:
-    m_OverrideState: 0
-    m_Value: 1000
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56,52 +16,7 @@ MonoBehaviour:
   - {fileID: 6426704641791874640}
   - {fileID: 9153205287893682077}
   - {fileID: 3641022199399448222}
-  - {fileID: -2847105570932170210}
-  - {fileID: 5442155027611909722}
-  - {fileID: 2677739484256048676}
   - {fileID: 5014359969628672080}
---- !u!114 &2677739484256048676
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31394aa05878563408489d5c1688f3a0, type: 3}
-  m_Name: PathTracing
-  m_EditorClassIdentifier: 
-  active: 0
-  enable:
-    m_OverrideState: 1
-    m_Value: 1
-  layerMask:
-    m_OverrideState: 0
-    m_Value:
-      serializedVersion: 2
-      m_Bits: 4294967295
-  maximumSamples:
-    m_OverrideState: 0
-    m_Value: 256
-  minimumDepth:
-    m_OverrideState: 0
-    m_Value: 1
-  maximumDepth:
-    m_OverrideState: 0
-    m_Value: 4
-  maximumIntensity:
-    m_OverrideState: 0
-    m_Value: 10
-  skyImportanceSampling:
-    m_OverrideState: 0
-    m_Value: 0
-  tilingParameters:
-    m_OverrideState: 0
-    m_Value: {x: 1, y: 1, z: 0, w: 0}
-  seedMode:
-    m_OverrideState: 0
-    m_Value: 1
 --- !u!114 &3641022199399448222
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -123,19 +38,19 @@ MonoBehaviour:
     m_Value: 1
   intensity:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 4
   directLightingStrength:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 0.3
   radius:
     m_OverrideState: 0
     m_Value: 2
   spatialBilateralAggressiveness:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0.15
   temporalAccumulation:
-    m_OverrideState: 0
-    m_Value: 1
+    m_OverrideState: 1
+    m_Value: 0
   ghostingReduction:
     m_OverrideState: 0
     m_Value: 0.5
@@ -304,22 +219,6 @@ MonoBehaviour:
   m_ObsoleteScrollSpeed:
     m_OverrideState: 1
     m_Value: 1
---- !u!114 &5442155027611909722
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f1984a7ac01bf84b86559f7595cdc68, type: 3}
-  m_Name: LightCluster
-  m_EditorClassIdentifier: 
-  active: 1
-  cameraClusterRange:
-    m_OverrideState: 1
-    m_Value: 50
 --- !u!114 &6426704641791874640
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -479,7 +378,7 @@ MonoBehaviour:
     m_Value: 0
   m_DenoiserRadiusSS:
     m_OverrideState: 1
-    m_Value: 0.6
+    m_Value: 0.545
   m_SecondDenoiserPassSS:
     m_OverrideState: 1
     m_Value: 1
