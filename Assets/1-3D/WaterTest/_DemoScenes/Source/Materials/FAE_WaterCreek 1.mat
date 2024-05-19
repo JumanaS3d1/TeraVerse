@@ -65,12 +65,12 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - Vector1_1942CF3A: 3.5
+    - Vector1_1942CF3A: 3.29
     - Vector1_67814CC1: 0.1
     - Vector1_7DFD32F9: 2
-    - Vector1_BE75C478: 16.08
-    - Vector1_E23F9E57: 0.029
-    - Vector1_E796673B: 1.72
+    - Vector1_BE75C478: 153.9
+    - Vector1_E23F9E57: 0.619
+    - Vector1_E796673B: 6.67
     - _AddPrecomputedVelocity: 0
     - _AlphaCutoffEnable: 0
     - _AlphaDstBlend: 0
@@ -80,7 +80,7 @@ Material:
     - _CullMode: 0
     - _CullModeForward: 0
     - _Cutoff: 0.5
-    - _Depth: 0.6
+    - _Depth: 2.72
     - _DepthOffsetEnable: 0
     - _Depthdarkness: 0.551
     - _DoubleSidedEnable: 1
@@ -91,25 +91,25 @@ Material:
     - _EnableBlendModePreserveSpecularLighting: 0
     - _EnableFogOnTransparent: 1
     - _ExcludeFromTUAndAA: 0
-    - _FlowSpeed: -1.7
+    - _FlowSpeed: 0.6
     - _Fresnelexponent: 4
-    - _Glossiness: 1
+    - _Glossiness: 0.494
     - _Metallicness: 0
-    - _NormalStrength: 1
+    - _NormalStrength: 0.66
     - _OpaqueCullMode: 2
     - _QueueControl: 0
     - _QueueOffset: 0
     - _RayTracing: 0
     - _ReceivesSSR: 1
     - _ReceivesSSRTransparent: 0
-    - _RefractionAmount: 0.057
+    - _RefractionAmount: 0.0387
     - _RefractionModel: 0
     - _RenderQueueType: 1
     - _RequireSplitLighting: 0
     - _RimDistance: 0
-    - _RimRize: 0.4
+    - _RimRize: 1.32
     - _RimSize: 1.42
-    - _RimTiling: 20.82
+    - _RimTiling: 19.13
     - _Rimfalloff: 0.11
     - _Rimtiling: 2
     - _SrcBlend: 1
@@ -128,7 +128,7 @@ Material:
     - _SurfaceHightlighttiling: 0.25
     - _SurfaceType: 0
     - _Surfacehightlightsize: 0
-    - _Tiling: -0.44
+    - _Tiling: 0.1
     - _Transparency: 0.476
     - _TransparentBackfaceEnable: 0
     - _TransparentCullMode: 2
@@ -151,8 +151,8 @@ Material:
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _FresnelColor: {r: 1, g: 1, b: 1, a: 0.5019608}
     - _RimColor: {r: 1, g: 1, b: 1, a: 1}
-    - _WaterColor: {r: 0, g: 0.4957266, b: 1, a: 1}
-    - _WaterShallowColor: {r: 0, g: 0.9394503, b: 1, a: 1}
+    - _WaterColor: {r: 0, g: 0.5315099, b: 1, a: 1}
+    - _WaterShallowColor: {r: 0.6367924, g: 0.8806455, b: 1, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &4693313506281306668
 MonoBehaviour:

@@ -5,9 +5,6 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/BNG Framework/Scenes/XR Demo.unity
-    guid: a1360534006d3f845bc79b46b93cfec5
   - enabled: 0
     path: Assets/BNG Framework/Scenes/Scene Transitioning.unity
     guid: 9d7c9629abf9c99449e358b0938b47d0
@@ -23,6 +20,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/BNG Framework/Scenes/Quest Demo.unity
     guid: eac0312c32df12949a47d07747a9d1cd
+  - enabled: 1
+    path: Assets/3-Scenes/Start scene 1.unity
+    guid: 3dc50ae4565b5f8418e1e46255141543
+  - enabled: 1
+    path: Assets/3-Scenes/Beach_Scene 1.unity
+    guid: 379d44f540416c54290df3be499196ce
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: a9306ae9785c55942873ead7bd20b538,
       type: 2}
