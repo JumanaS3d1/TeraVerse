@@ -1904,7 +1904,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.03529412}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.12941177}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2018,80 +2018,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 676577384}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &701978547
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: b8c3c1aec7edacc49b119321e7b168c3,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 153.83
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b8c3c1aec7edacc49b119321e7b168c3,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 21.37
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b8c3c1aec7edacc49b119321e7b168c3,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 210.00536
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b8c3c1aec7edacc49b119321e7b168c3,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b8c3c1aec7edacc49b119321e7b168c3,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b8c3c1aec7edacc49b119321e7b168c3,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b8c3c1aec7edacc49b119321e7b168c3,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b8c3c1aec7edacc49b119321e7b168c3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b8c3c1aec7edacc49b119321e7b168c3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b8c3c1aec7edacc49b119321e7b168c3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: b8c3c1aec7edacc49b119321e7b168c3,
-        type: 3}
-      propertyPath: m_Name
-      value: OceanHands
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: b8c3c1aec7edacc49b119321e7b168c3,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: -8797556516500927197, guid: b8c3c1aec7edacc49b119321e7b168c3, type: 3}
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b8c3c1aec7edacc49b119321e7b168c3, type: 3}
 --- !u!1 &800988898
 GameObject:
   m_ObjectHideFlags: 0
@@ -2965,7 +2891,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 0f5b10e8735f5c84798acd2134010e90,
         type: 3}
       propertyPath: m_Name
-      value: V3 (1)
+      value: V3 (1)-deactivate
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 0f5b10e8735f5c84798acd2134010e90,
         type: 3}
@@ -3817,7 +3743,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.1966002, g: 0.8797416, b: 0.8867924, a: 0.21176471}
+  m_Color: {r: 0.1966002, g: 0.8797416, b: 0.8867924, a: 0.18431373}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -5145,7 +5071,7 @@ GameObject:
   - component: {fileID: 2060447964}
   - component: {fileID: 2060447963}
   m_Layer: 0
-  m_Name: Canvas-UI-HUD
+  m_Name: Canvas-UI-HUD-deactivate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10426,7 +10352,6 @@ SceneRoots:
   - {fileID: 1653696934}
   - {fileID: 807263238}
   - {fileID: 1580080811}
-  - {fileID: 701978547}
   - {fileID: 244066125}
   - {fileID: 609260362}
   - {fileID: 927651562}
