@@ -24,7 +24,7 @@ EditorBuildSettings:
     path: Assets/3-Scenes/Start scene 1.unity
     guid: 3dc50ae4565b5f8418e1e46255141543
   - enabled: 1
-    path: Assets/3-Scenes/Beach_Scene 1.unity
+    path: Assets/3-Scenes/Beach_Scene dev.unity
     guid: 379d44f540416c54290df3be499196ce
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: a9306ae9785c55942873ead7bd20b538,
