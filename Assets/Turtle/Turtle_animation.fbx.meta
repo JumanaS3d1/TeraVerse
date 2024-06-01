@@ -3,7 +3,57 @@ guid: 1b7e65777e3870547adb905c8cdfe4da
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ButtonBase
+    second: {fileID: 2100000, guid: 97e556e5b5981b843858eb1636e4c03b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EyeBall
+    second: {fileID: 2100000, guid: 9ac3d0caa5b634f4db7baf84f54a8c38, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EyeCenter
+    second: {fileID: 2100000, guid: 3d32ef17f09c1ba42807c251ae46f69b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EyeLed
+    second: {fileID: 2100000, guid: d52a264fa0b090049b78845079d8ae23, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EyeLid
+    second: {fileID: 2100000, guid: e44f9e09ca678e247a9f9c8fdd87ff27, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Green_Botton
+    second: {fileID: 2100000, guid: 9a88df354fbb1cd42a0e097607cd9e6b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.002
+    second: {fileID: 2100000, guid: 02fb57c62c200ca409bfde17c91faec3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Skin
+    second: {fileID: 2100000, guid: 5a25b17bd72d0d14caf865cedf4108db, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: innerMouth
+    second: {fileID: 2100000, guid: 9a0f7f94285183a468f3d3f6322a9175, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tongue
+    second: {fileID: 2100000, guid: c3053ed531047064ab80e7c6fa29c7ae, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
