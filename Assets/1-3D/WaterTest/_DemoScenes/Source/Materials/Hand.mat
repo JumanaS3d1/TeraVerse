@@ -151,8 +151,8 @@ Material:
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _FresnelColor: {r: 1, g: 1, b: 1, a: 0.5019608}
     - _RimColor: {r: 1, g: 1, b: 1, a: 1}
-    - _WaterColor: {r: 0.5424528, g: 0.76786214, b: 1, a: 1}
-    - _WaterShallowColor: {r: 0, g: 0.9394503, b: 1, a: 1}
+    - _WaterColor: {r: 0.15966538, g: 0.5088767, b: 0.8679245, a: 1}
+    - _WaterShallowColor: {r: 0, g: 0.9411764, b: 1, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &4693313506281306668
 MonoBehaviour:
