@@ -107,7 +107,7 @@ Material:
     - _RenderQueueType: 1
     - _RequireSplitLighting: 0
     - _RimDistance: 0
-    - _RimRize: 1.32
+    - _RimRize: 0.12
     - _RimSize: 1.42
     - _RimTiling: 19.13
     - _Rimfalloff: 0.11
