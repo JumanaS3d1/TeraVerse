@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Vive
+  - Hand
   layers:
   - Default
   - TransparentFX
