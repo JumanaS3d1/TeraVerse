@@ -12,6 +12,7 @@ using BNG;
         private Vector3 lastPosition;
         private ParticleSystem.EmissionModule emissionModule;
         protected InputBridge input;
+    public AudioSource waterSFX;
 
         public ControllerHand controller;
 
@@ -45,6 +46,10 @@ using BNG;
                 float normalizedSpeed = Mathf.Clamp01((speed - minSpeedThreshold) / (maxSpeedThreshold - minSpeedThreshold));
                 emissionModule.rateOverTime = Mathf.Lerp(0, 100, normalizedSpeed);  // Adjust 100 to your desired max emission rate
                 input.VibrateController(2f, 3f, .2f, controller);
+            print(normalizedSpeed);
+            if (normalizedSpeed > 0.5) {
+                waterSFX.Play();
+            }
             }
         }
     }
