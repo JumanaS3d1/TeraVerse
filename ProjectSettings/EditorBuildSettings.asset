@@ -21,10 +21,10 @@ EditorBuildSettings:
     path: Assets/BNG Framework/Scenes/Quest Demo.unity
     guid: eac0312c32df12949a47d07747a9d1cd
   - enabled: 1
-    path: Assets/3-Scenes/GameScenes/Beach_Scene art-dev 2.unity
+    path: Assets/3-Scenes/GameScenes/Beach_Scene art-dev 1.unity
     guid: 5b6f8480bc3d77b4cb39db057ab44908
   - enabled: 1
-    path: Assets/3-Scenes/GameScenes/Scene_Ocean art-dev.unity
+    path: Assets/3-Scenes/GameScenes/Scene_Ocean art-dev 1.unity
     guid: 41e9492ab6f99004b9c6d7195b03a691
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: a9306ae9785c55942873ead7bd20b538,
