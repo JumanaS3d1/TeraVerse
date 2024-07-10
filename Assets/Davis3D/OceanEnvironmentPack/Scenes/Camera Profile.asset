@@ -133,15 +133,15 @@ MonoBehaviour:
     m_Value: 0
   top:
     m_OverrideState: 1
-    m_Value: {r: 0.046665095, g: 0.1559265, b: 0.32314324, a: 1}
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
   middle:
     m_OverrideState: 1
-    m_Value: {r: 0.046665095, g: 0.1559265, b: 0.32314324, a: 1}
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
   bottom:
     m_OverrideState: 1
-    m_Value: {r: 0.046665095, g: 0.1559265, b: 0.32314324, a: 1}
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
   gradientDiffusion:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 1
 --- !u!114 &-7629636268017727261
 MonoBehaviour:
@@ -392,7 +392,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b8bcdf71d7fafa419fca1ed162f5fc9, type: 3}
   m_Name: ColorAdjustments
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   postExposure:
     m_OverrideState: 1
     m_Value: 1.75
@@ -598,7 +598,7 @@ MonoBehaviour:
   active: 1
   skyType:
     m_OverrideState: 1
-    m_Value: 3
+    m_Value: 1
   cloudType:
     m_OverrideState: 0
     m_Value: 0
