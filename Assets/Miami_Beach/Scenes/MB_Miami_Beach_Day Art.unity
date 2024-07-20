@@ -935,6 +935,19 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 8902388}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &9640483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7a7c78d7c24f33428c34624c7d6c489, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waves: []
 --- !u!4 &14086291 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: cf50ba0be7ef03f4390078b5fab5f47f,
@@ -70056,6 +70069,7 @@ GameObject:
   - component: {fileID: 808223381}
   - component: {fileID: 808223380}
   - component: {fileID: 808223382}
+  - component: {fileID: 808223383}
   m_Layer: 4
   m_Name: Water System
   m_TagString: Untagged
@@ -70079,13 +70093,13 @@ MonoBehaviour:
   Settings: {fileID: 1044867716}
   WaterRenderingActive: 1
   WorldSpaceBounds:
-    m_Center: {x: 0, y: -5000.6016, z: 0}
+    m_Center: {x: 0, y: -5000.4087, z: 0}
     m_Extent: {x: 500000, y: 5000, z: 500000}
   ShowColorSettings: 1
   ShowExpertColorSettings: 0
   ShowWaves: 1
   ShowExpertWavesSettings: 0
-  ShowFoam: 0
+  ShowFoam: 1
   ShowReflectionSettings: 0
   ShowExpertReflectionSettings: 0
   ShowRefractionSettings: 0
@@ -70098,7 +70112,7 @@ MonoBehaviour:
   FlowMapBrushStrength: 0.75
   ShowDynamicWaves: 0
   ShowExpertDynamicWavesSettings: 0
-  ShowShorelineMap: 0
+  ShowShorelineMap: 1
   ShorelineInEditMode: 0
   ShowExpertShorelineSettings: 0
   ShowFoamSettings: 0
@@ -70291,6 +70305,20 @@ MonoBehaviour:
     Scale: {x: 1.2238808, y: 1.2238808, z: 1.2238808}
     Flip: 0
     Pad: {x: 0, y: 0, z: 0}
+  Splines: []
+--- !u!114 &808223383
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 808223379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95f35b292598e844e873203fc708e8c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShorelineWaves: []
   Splines: []
 --- !u!1001 &810252805
 PrefabInstance:
@@ -90471,7 +90499,7 @@ MonoBehaviour:
   GlobalWindTurbulence: 1
   GlobalFftWavesQuality: 256
   GlobalFftWavesCascades: 4
-  GlobalWavesAreaScale: 0.2
+  GlobalWavesAreaScale: 0.59
   GlobalTimeScale: 1
   LocalWindSpeed: 3.5
   LocalWindRotation: 0
@@ -90481,14 +90509,14 @@ MonoBehaviour:
   LocalWavesAreaScale: 1
   LocalTimeScale: 1
   FoamProfile: 2
-  UseOceanFoam: 0
+  UseOceanFoam: 1
   OceanFoamColor: {r: 0.535, g: 0.649, b: 0.664, a: 0.86}
   OceanFoamStrength: 0.2
   OceanFoamTextureSize: 30
-  UseIntersectionFoam: 0
+  UseIntersectionFoam: 1
   IntersectionFoamColor: {r: 0.64705884, g: 0.9019608, b: 1, a: 0.92156863}
-  IntersectionFoamFadeDistance: 1.5
-  IntersectionTextureFoamSize: 25
+  IntersectionFoamFadeDistance: 0.93
+  IntersectionTextureFoamSize: 5.6
   ReflectionProfile: 2
   UseScreenSpaceReflection: 1
   ScreenSpaceReflectionResolutionQuality: 50
@@ -90546,13 +90574,13 @@ MonoBehaviour:
   DynamicWavesPropagationSpeed: 1
   UseDynamicWavesRainEffect: 0
   DynamicWavesRainStrength: 0.2
-  ShorelineProfile: 2
+  ShorelineProfile: 0
   UseShorelineRendering: 1
   ShorelineColor: {r: 0.85, g: 0.85, b: 0.85, a: 0.9}
   ShorelineFoamLodQuality: 0
-  UseShorelineFoamFastMode: 0
+  UseShorelineFoamFastMode: 1
   ShorelineFoamReceiveDirShadows: 1
-  ShorelineWavesScriptableData: {fileID: 1581555383}
+  ShorelineWavesScriptableData: {fileID: 9640483}
   CausticProfile: 2
   UseCausticEffect: 1
   UseGlobalCausticHighQualityFiltering: 0
@@ -132456,169 +132484,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1580840495}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1581555383
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7a7c78d7c24f33428c34624c7d6c489, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Waves:
-  - WorldMatrix:
-      e00: -13.996809
-      e01: 0
-      e02: -0.3416388
-      e03: 128.7183
-      e10: 0
-      e11: 4.5
-      e12: 0
-      e13: -0.7
-      e20: 0.29893395
-      e21: 0
-      e22: -15.996353
-      e23: -58.160625
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    WaveID: 0
-    Position: {x: 128.7183, y: -0.7, z: -58.160625}
-    EulerRotationY: 181.2235
-    Size: {x: 14, y: 4.5, z: 16}
-    TimeOffset: 0
-    Scale: {x: 1, y: 1, z: 1}
-    Flip: 1
-    Pad: {x: 0, y: 0, z: 0}
-  - WorldMatrix:
-      e00: -17.178873
-      e01: 0
-      e02: 0.4193077
-      e03: 133.20825
-      e10: 0
-      e11: 5.52304
-      e12: -0
-      e13: -0.7
-      e20: 0.36689422
-      e21: 0
-      e22: 19.632998
-      e23: 0.8764458
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    WaveID: 0
-    Position: {x: 133.20825, y: -0.7, z: 0.8764458}
-    EulerRotationY: 181.2235
-    Size: {x: 14, y: 4.5, z: 16}
-    TimeOffset: 0.15580674
-    Scale: {x: 1.2273421, y: 1.2273421, z: 1.2273421}
-    Flip: 0
-    Pad: {x: 0, y: 0, z: 0}
-  - WorldMatrix:
-      e00: -12.818531
-      e01: 0
-      e02: 0.312879
-      e03: 127.21303
-      e10: 0
-      e11: 4.1211815
-      e12: -0
-      e13: -0.7
-      e20: 0.2737691
-      e21: 0
-      e22: 14.64975
-      e23: -41.152454
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    WaveID: 0
-    Position: {x: 127.21303, y: -0.7, z: -41.152454}
-    EulerRotationY: 181.2235
-    Size: {x: 14, y: 4.5, z: 16}
-    TimeOffset: 0.3300798
-    Scale: {x: 0.9158181, y: 0.9158181, z: 0.9158181}
-    Flip: 0
-    Pad: {x: 0, y: 0, z: 0}
-  - WorldMatrix:
-      e00: -13.304992
-      e01: 0
-      e02: 0.3247527
-      e03: 130.40024
-      e10: 0
-      e11: 4.2775793
-      e12: -0
-      e13: -0.7
-      e20: 0.28415862
-      e21: 0
-      e22: 15.205705
-      e23: 24.466099
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    WaveID: 0
-    Position: {x: 130.40024, y: -0.7, z: 24.466099}
-    EulerRotationY: 181.2235
-    Size: {x: 14, y: 4.5, z: 16}
-    TimeOffset: 0.48229676
-    Scale: {x: 0.9505732, y: 0.9505732, z: 0.9505732}
-    Flip: 0
-    Pad: {x: 0, y: 0, z: 0}
-  - WorldMatrix:
-      e00: -14.648968
-      e01: 0
-      e02: 0.35755694
-      e03: 129.82709
-      e10: 0
-      e11: 4.7096705
-      e12: -0
-      e13: -0.7
-      e20: 0.3128623
-      e21: 0
-      e22: 16.741678
-      e23: -20.066471
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    WaveID: 0
-    Position: {x: 129.82709, y: -0.7, z: -20.066471}
-    EulerRotationY: 181.2235
-    Size: {x: 14, y: 4.5, z: 16}
-    TimeOffset: 0.6136756
-    Scale: {x: 1.0465934, y: 1.0465934, z: 1.0465934}
-    Flip: 0
-    Pad: {x: 0, y: 0, z: 0}
-  - WorldMatrix:
-      e00: -17.130424
-      e01: 0
-      e02: 0.41812515
-      e03: 133.05103
-      e10: 0
-      e11: 5.5074635
-      e12: -0
-      e13: -0.7
-      e20: 0.3658595
-      e21: 0
-      e22: 19.57763
-      e23: 49.417953
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    WaveID: 0
-    Position: {x: 133.05103, y: -0.7, z: 49.417953}
-    EulerRotationY: 181.2235
-    Size: {x: 14, y: 4.5, z: 16}
-    TimeOffset: 0.8075951
-    Scale: {x: 1.2238808, y: 1.2238808, z: 1.2238808}
-    Flip: 0
-    Pad: {x: 0, y: 0, z: 0}
 --- !u!1001 &1584126836
 PrefabInstance:
   m_ObjectHideFlags: 0
