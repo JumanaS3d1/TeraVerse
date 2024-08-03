@@ -13409,10 +13409,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rightHandTransform: {fileID: 1996542911}
   leftHandTransform: {fileID: 1102487614}
-  raiseHeightThreshold: 2.5
+  raiseHeightThreshold: 2
   waveDistanceThreshold: 0.3
   waveCountThreshold: 1
-  waveDetectionTime: 2
+  waveDetectionTime: 1
   mainTimeline: {fileID: 609260363}
 --- !u!4 &181595814
 Transform:
@@ -17392,7 +17392,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 225481812}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 6cdf2530d4d7ea645869adf87c8b6480, type: 3}
@@ -19129,6 +19129,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OceanHands (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b8c3c1aec7edacc49b119321e7b168c3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -48114,7 +48119,7 @@ PrefabInstance:
     - target: {fileID: -8391222552659086748, guid: 4d6013e240866894c88de9ea7c47cdc4,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -7283768970185057369, guid: 4d6013e240866894c88de9ea7c47cdc4,
         type: 3}
@@ -48631,6 +48636,11 @@ PrefabInstance:
       propertyPath: m_CastShadows
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8417361359673230750, guid: 4d6013e240866894c88de9ea7c47cdc4,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4f348692107d7ae45a4f55a010384ead, type: 2}
     - target: {fileID: 8879528566716807029, guid: 4d6013e240866894c88de9ea7c47cdc4,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -52971,10 +52981,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 468703553}
-    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1b7e65777e3870547adb905c8cdfe4da,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1052421788}
     - targetCorrespondingSourceObject: {fileID: -3384784892625989427, guid: 1b7e65777e3870547adb905c8cdfe4da,
         type: 3}
       insertIndex: -1
@@ -57512,7 +57518,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 7fecc7aeb2a73164891bb8a8e79d1786, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.015
+  m_Volume: 0.008
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -70356,14 +70362,14 @@ MonoBehaviour:
   Settings: {fileID: 1044867716}
   WaterRenderingActive: 1
   WorldSpaceBounds:
-    m_Center: {x: 0, y: -5000.5493, z: 0}
+    m_Center: {x: 0, y: -5000.502, z: 0}
     m_Extent: {x: 500000, y: 5000, z: 500000}
   ShowColorSettings: 1
   ShowExpertColorSettings: 0
   ShowWaves: 1
   ShowExpertWavesSettings: 0
   ShowFoam: 1
-  ShowReflectionSettings: 0
+  ShowReflectionSettings: 1
   ShowExpertReflectionSettings: 0
   ShowRefractionSettings: 0
   ShowExpertRefractionSettings: 0
@@ -90473,11 +90479,11 @@ MonoBehaviour:
   GlobalWindZoneTurbulenceMultiplier: 1
   GlobalWindSpeed: 50
   GlobalWindRotation: 80
-  GlobalWindTurbulence: 1
+  GlobalWindTurbulence: 0.09
   GlobalFftWavesQuality: 256
   GlobalFftWavesCascades: 2
-  GlobalWavesAreaScale: 0.2
-  GlobalTimeScale: 1
+  GlobalWavesAreaScale: 0.5
+  GlobalTimeScale: 0.86
   LocalWindSpeed: 3.5
   LocalWindRotation: 0
   LocalWindTurbulence: 0.4
@@ -90489,11 +90495,11 @@ MonoBehaviour:
   UseOceanFoam: 1
   OceanFoamColor: {r: 0.535, g: 0.649, b: 0.664, a: 0.86}
   OceanFoamStrength: 0.223
-  OceanFoamTextureSize: 14.4
+  OceanFoamTextureSize: 23.7
   UseIntersectionFoam: 1
   IntersectionFoamColor: {r: 0.64705884, g: 0.9019608, b: 1, a: 0.92156863}
-  IntersectionFoamFadeDistance: 0.47
-  IntersectionTextureFoamSize: 5
+  IntersectionFoamFadeDistance: 2.6
+  IntersectionTextureFoamSize: 20.6
   ReflectionProfile: 2
   UseScreenSpaceReflection: 1
   ScreenSpaceReflectionResolutionQuality: 50
@@ -91015,7 +91021,7 @@ GameObject:
   - component: {fileID: 1052421790}
   - component: {fileID: 1052421789}
   m_Layer: 0
-  m_Name: TargetPosition
+  m_Name: TargetPositionInsideTheSea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -91029,12 +91035,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1052421787}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.24, y: 2.3, z: -1.12}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0.011284785, y: -0.019638121, z: 0.057893485, w: -0.9980658}
+  m_LocalPosition: {x: 211.17482, y: -0.3319713, z: -39.581326}
+  m_LocalScale: {x: 0.16031002, y: 0.16030999, z: 0.16031002}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 607066727}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1052421789
 MeshRenderer:
@@ -172355,7 +172361,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a767b23a6d35b554d819fe26d978dd42, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.007
+  m_Volume: 0.004
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -182805,17 +182811,17 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b76e4d64404218e409afa5c971155bba, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 0.648
+  m_PlayOnAwake: 1
+  m_Volume: 0.516
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 10.157349
-  MaxDistance: 76.628265
+  MinDistance: 26.632294
+  MaxDistance: 83.031006
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -206067,11 +206073,12 @@ SceneRoots:
   - {fileID: 609260362}
   - {fileID: 5698086746866682337}
   - {fileID: 1807794210}
+  - {fileID: 1052421788}
   - {fileID: 607066724}
   - {fileID: 52391991}
   - {fileID: 536787043}
   - {fileID: 1733354237}
   - {fileID: 1842727333}
   - {fileID: 354638982}
-  - {fileID: 1889356202}
   - {fileID: 385827607}
+  - {fileID: 1889356202}
