@@ -432,12 +432,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93eb560ae5ebcd8459ef03cd3eccbd16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Profile: {fileID: 11400000, guid: 7128db94c0392ae4fac02b2dd9ba5fb0, type: 2}
+  Profile: {fileID: 11400000, guid: 23fbdc9aa2ee45d40935e0e1a53fae7e, type: 2}
   Settings: {fileID: 1628896542}
   WaterRenderingActive: 1
   WorldSpaceBounds:
-    m_Center: {x: -0.00008895714, y: 1248.5099, z: 0.08425628}
-    m_Extent: {x: 0.025666047, y: 0.031994633, z: 0.084518224}
+    m_Center: {x: -0.00008895714, y: 1248.5156, z: 0.08425628}
+    m_Extent: {x: 0.025666047, y: 0.028148828, z: 0.084518224}
   ShowColorSettings: 1
   ShowExpertColorSettings: 0
   ShowWaves: 1
@@ -479,7 +479,7 @@ Transform:
   m_GameObject: {fileID: 825779541}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1248.5071, z: 0}
+  m_LocalPosition: {x: 0, y: 1248.5148, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -627,7 +627,7 @@ MonoBehaviour:
   VolumetricLightProfile: 2
   UseVolumetricLight: 1
   VolumetricLightResolutionQuality: 50
-  VolumetricLightIteration: 6
+  VolumetricLightIteration: 7
   VolumetricLightTemporalReprojectionAccumulationFactor: 0.35
   VolumetricLightUseAdditionalLightsCaustic: 0
   FlowmapProfile: 2
@@ -947,12 +947,12 @@ MonoBehaviour:
   GlobalWavesAreaScale: 1
   GlobalTimeScale: 1
   LocalWindSpeed: 1
-  LocalWindRotation: 2
-  LocalWindTurbulence: 0.016
-  LocalFftWavesQuality: 32
+  LocalWindRotation: 82
+  LocalWindTurbulence: 0.202
+  LocalFftWavesQuality: 128
   LocalFftWavesCascades: 4
-  LocalWavesAreaScale: 0.57
-  LocalTimeScale: 0.48
+  LocalWavesAreaScale: 0.2
+  LocalTimeScale: 0.11
   FoamProfile: 2
   UseOceanFoam: 1
   OceanFoamColor: {r: 0.9386792, g: 0.9925672, b: 1, a: 0.86}
@@ -1012,7 +1012,7 @@ MonoBehaviour:
   FluidsFoamStrength: 0.5
   FlowingScriptableData: {fileID: 0}
   DynamicWavesProfile: 2
-  UseDynamicWaves: 0
+  UseDynamicWaves: 1
   DynamicWavesAreaSize: 50
   DynamicWavesResolutionPerMeter: 34
   DynamicWavesGlobalForceScale: 0.2
@@ -1055,7 +1055,7 @@ MonoBehaviour:
   UseTesselation: 1
   TesselationFactor_Infinite: 0.5
   TesselationFactor_Finite: 0.5
-  TesselationFactor_Custom: 0.699
+  TesselationFactor_Custom: 0.541
   TesselationFactor_River: 0.5
   TesselationMaxDistance_Infinite: 500
   TesselationMaxDistance_Finite: 100
@@ -1063,7 +1063,7 @@ MonoBehaviour:
   TesselationMaxDistance_River: 100
   SplineScriptableData: {fileID: 0}
   RenderingProfile: 2
-  TransparentSortingPriority: -15
+  TransparentSortingPriority: 2
   DrawToPosteffectsDepth: 0
   WireframeMode: 0
 --- !u!1 &1896761370

@@ -43,4 +43,9 @@ public class RowingController : MonoBehaviour
     {
         return currentSpeed;
     }
+
+    public void SetSpeed(float min) {
+        minSpeed = min;
+        //maxSpeed = max;
+    }
 }

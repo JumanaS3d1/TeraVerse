@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Vive
   - Hand
+  - SphereCollider
   layers:
   - Default
   - TransparentFX
