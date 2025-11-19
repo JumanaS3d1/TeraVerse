@@ -61,7 +61,7 @@ public class PathFollower : MonoBehaviour
    
     }
 
-    public float transitionDuration = 2.0f;
+    public float transitionDuration = 4.0f;
 
     private IEnumerator SmoothTransition()
     {
